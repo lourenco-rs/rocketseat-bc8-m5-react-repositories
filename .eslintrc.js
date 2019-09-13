@@ -12,12 +12,12 @@ module.exports = {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 2018,
-    sourceType: 'module',
+    ecmaVersion: 2018,sourceType: 'module',
   },
   plugins: [
     'react',
@@ -27,7 +27,7 @@ module.exports = {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
       'warn',
-      { extensions: ['.jsx', '.js']}
+      { extensions: ['.jsx', '.js'] }
     ],
     'import/prefer-default-export': 'off'
   }
